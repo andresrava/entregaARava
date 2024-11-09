@@ -1,15 +1,17 @@
 import React from "react";
-import { FaCartShopping } from "react-icons/fa6";
+import Badge from 'react-bootstrap/Badge';
+import {FaCartShopping} from "react-icons/fa6";
 import "./navbar.css";
 
 function CartWidget() {
 return (
-    <div className="carrito">
-         <FaCartShopping size={100}/>
-         <span className="badge">
+    <span className="carrito">
+         <FaCartShopping size={50}/>
+         <Badge bg="primary">5</Badge>
+         {/* <span className="badge">
             5
-         </span>
-    </div>
+         </span> */}
+    </span>
    
 )
 }
